@@ -54,19 +54,31 @@ main {
 }
 
 div.pricing-sections-container {
-  background-color: white;
   display: flex;
   color: #3c3c3c;
-  height: 30.875rem;
+  max-height: min-content;
   font-size: 0.875rem;
 }
+
 @media screen and (max-width: 1111px) {
+  body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   div.pricing-sections-container {
-    flex-direction: column;
+  align-items: center;
+  flex-direction: column;
   }
 }
 
+@media screen and (max-width: 750px) {
+  body {
+    padding-left: .5rem; 
+    padding-right: .5rem;
+  }
+}
 .pricing-section {
+  background-color: white;
   width: 19.3125rem;
   padding: 1.5rem;
   display: flex;
@@ -124,6 +136,7 @@ div.pricing-sections-container {
 .pricing-section a.cta {
   font-weight: 600;
   margin-top: 1rem;
+  text-align: center;
   padding: 0.8125rem 1rem;
   background-color: #f4364c;
   color: white;
