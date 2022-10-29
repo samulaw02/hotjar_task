@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: inherit;
+  font-weight: normal;
+  color: inherit;
+  border: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 10.25rem 16rem;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+}
+body::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  background-image: radial-gradient(
+    100% 100% at 100% 100%,
+    #ffb140 0%,
+    #fd3a5c 100%
+  );
+  background-repeat: no-repeat;
+  left: 0;
+  top: 0;
+  height: 50%;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: "Merriweather", sans-serif;
+  font-size: 2.625rem;
+  margin-bottom: 1.5rem;
+}
+
+.heading {
+  color: white;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+main {
+  display: grid;
+}
+
+div.pricing-sections-container {
+  background-color: white;
+  display: flex;
+  color: #3c3c3c;
+  height: 30.875rem;
+  font-size: 0.875rem;
+}
+@media screen and (max-width: 1111px) {
+  div.pricing-sections-container {
+    flex-direction: column;
+  }
+}
+
+.pricing-section {
+  width: 19.3125rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  border: 0.5px solid #e4e4e4;
+  margin-bottom: 1rem;
+}
+
+.pricing-section h2 {
+  font-family: "Merriweather", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-section h3 {
+  color: #61666d;
+  margin-bottom: 1.5rem;
+}
+
+.pricing-section p.price {
+  font-weight: 700;
+}
+
+.pricing-section span.amount {
+  font-family: "Merriweather", sans-serif;
+  font-size: 2.625rem;
+  font-weight: inherit;
+}
+
+.pricing-section p.feature-1 {
+  margin-top: 2.125rem;
+}
+.pricing-section p.custom-feature-1 {
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  font-size: 0.625rem;
+  margin-bottom: 2px;
+}
+
+.pricing-section p.feature-1,
+.pricing-section .session-count-dropdown {
+  width: 16.3125rem;
+  height: 2.5rem;
+}
+
+.pricing-section .session-count-dropdown {
+  border: 1px solid #c9c9c9;
+  box-shadow: 0px 2px 4px rgba(45, 54, 66, 0.07),
+    0px 1px 2px rgba(45, 54, 66, 0.07);
+  border-radius: 4px;
+  background-color: white;
+  padding: 0 1rem;
+}
+
+.pricing-section a.cta {
+  font-weight: 600;
+  margin-top: 1rem;
+  padding: 0.8125rem 1rem;
+  background-color: #f4364c;
+  color: white;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.pricing-section p.base-feature {
+  font-weight: 600;
+}
+
+.pricing-section ul.features-list {
+  margin-top: 0.5rem;
+  list-style-image: url("icons/check.svg");
+  margin-left: 1.5rem;
+}
+
+.pricing-section ul.features-list > li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  padding: 2rem 2.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0px 8px 12px rgba(45, 54, 66, 0.04),
+    0px 0px 8px rgba(45, 54, 66, 0.07), 0px 0px 4px rgba(45, 54, 66, 0.07),
+    0px 1px 2px rgba(45, 54, 66, 0.07);
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: #3c3c3c;
+  align-items: center;
+}
+
+footer a {
+  border: 1px solid #c9c9c9;
+  padding: 0.8125rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #5e5e5e;
+}
+
+footer span.text-bold {
+  font-weight: 700;
+}
